@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "bugbash2392020-d85e"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "bugbash2392020-d85e"
+  template:
+    metadata:
+      labels:
+        app: "bugbash2392020-d85e"
+    spec:
+      containers:
+        - name: "bugbash2392020-d85e"
+          image: "bugbash2392020acr.azurecr.io/bugbash2392020fcc8"
+          ports:
+          - containerPort: 
