@@ -52,7 +52,7 @@ jobs:
           image.repository:abhisheaacr.azurecr.io/vipulakscluster
           image.tag:${{ github.sha }}
           imagePullSecrets:
-            -name:vipulaksclusdockerauth
+            -name:vipulaksclusdockerautha
       id: bake
 
     - uses: azure/k8s-deploy@v1
